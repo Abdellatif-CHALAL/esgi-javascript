@@ -60,7 +60,6 @@ String.prototype.vig = function(code) {
 
 
 
-// console.log(prop_access({ animal: { type: { name: "chine"} } }, "animal.type.name"));
 
 
 

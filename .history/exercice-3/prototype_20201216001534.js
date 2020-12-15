@@ -42,13 +42,13 @@ String.prototype.vig = function(code) {
 
   Object.prototype.prop_access = function(path) {
     if(path === "" || path == null){
-      return this;
+      return obj;
     }
-    if(this == null){
+    if(obj == null){
       return path + " not exist";
     }
     let props = path.split('.');
-    let result = this;
+    let result = obj;
     for (var i = 0; i < props.length; i++) {
       result = result[props[i]];
       if (typeof result === 'undefined'){
@@ -60,7 +60,6 @@ String.prototype.vig = function(code) {
 
 
 
-// console.log(prop_access({ animal: { type: { name: "chine"} } }, "animal.type.name"));
 
 
 

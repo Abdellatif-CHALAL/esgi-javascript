@@ -119,14 +119,14 @@ function prop_access(obj, path) {
 }
 
 
-// function essai() {
-//     this.v = "latif";
-//     this.f = function afficheName() {
-//       // 
-//       return console.log(v);
-//     }
-// }
-// console.log(essai.v);
+function essai(params) {
+  let v = 0;
+  if (params) {
+   v = 2;
+  }
+  return v;
+}
+console.log(essai(true));
 // console.log("vig " + vig("latif",[0-25]));
 
 // console.log(prop_access({ animal: { type: { name: "chine"} } }, "animal.type.name"));
