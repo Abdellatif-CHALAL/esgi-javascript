@@ -105,7 +105,7 @@ function prop_access(obj, path) {
     return obj;
   }
   if(obj == null){
-    return path + " not exist";
+    return path + "not exist";
   }
   let props = path.split('.');
   let result = obj;
@@ -118,7 +118,5 @@ function prop_access(obj, path) {
   return result;
 }
 
-// console.log("vig " + vig("latif",[0-25]));
-
-// console.log(prop_access({ animal: { type: { name: "chine"} } }, "animal.type.name"));
+console.log("vig " + vig("latif",[0-25]));
 

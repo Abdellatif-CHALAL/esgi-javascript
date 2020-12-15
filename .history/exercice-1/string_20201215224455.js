@@ -120,5 +120,5 @@ function prop_access(obj, path) {
 
 // console.log("vig " + vig("latif",[0-25]));
 
-// console.log(prop_access({ animal: { type: { name: "chine"} } }, "animal.type.name"));
+console.log(prop_access({ animal: { type: { name: "chine"} } }, "animal.type.name"));
 
