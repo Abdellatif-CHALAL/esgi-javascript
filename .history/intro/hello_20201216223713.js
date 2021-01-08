@@ -1,7 +1,6 @@
 console.log("Hello World!");
 
+let v = 0;
 
-
-let v = {name:"latif"};
-v = "zfzvrv";
+v = "l";
 console.log(v);

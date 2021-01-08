@@ -1,26 +1,18 @@
-var pilote = function Pilote(nom) {
-    var state = {
-        state: null,
-        origin: null,
-        position: null
-    };
+var pilote = function Pilote(name) {
+    const props = {};
+    this.name = name;
+    const props = {};
     this.receiveData = function (data) {
-        if ((!data.state === undefined)) {
-            state.state = data.state;   
-        }
-        if (!(data.position === undefined)) {
-            state.position = data.position;
-        }
-        if (!(data.origin === undefined)) {
-            state.origin = data.origin;
-        }
+            props.state = data.state;   
+            props.position = data.position;
+            props.origin = data.origin;
     }
 
     this.getState = function () {
         return state.state; 
     }
     this.speak = function () {
-        switch (state.state) {
+        switch (props.state) {
             case "ready": return "Here we go!";break;
             case "happy": return "Let's have some fun!";break;
             case "sad": return "Outch!!! Damn {state.origin}";break;
